@@ -1,0 +1,322 @@
+@font-face {
+    font-family: Architects_Daughter;
+    src: url('../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf');
+}
+@font-face {
+    font-family: bitter;
+    src: url('../fonts/Bitter/Bitter-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: Indie_flower;
+    src: url('../fonts/Indie_Flower/IndieFlower-Regular.ttf');
+}
+@font-face {
+    font-family: montserrat;
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: montserrat;
+}
+body {
+    margin:0;
+    text-align: center;
+    background: linear-gradient(to top, #0078d4, rgb(131, 194, 253));
+}
+header {
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    border-bottom: 1px solid black;
+    z-index: 2;
+}
+.ici {
+    background-color: rgb(50, 156, 255);
+    transform: scale(1.2);
+}
+.bandeau-nav nav a.ici {
+    color: white;
+}
+.bandeau-nav nav a.ici:hover {
+    color: white;
+    background-color: rgb(50, 156, 255);
+}
+.bandeau-nav a {
+    transition-duration:0.3s;
+    text-decoration: none;
+    padding: 5px;
+    border: solid;
+    border-color: #0077D5;
+    color: rgb(104, 104, 104);
+    border-radius: 10px 10px 10px 10px;
+    border-width: 2px;
+    
+}
+.bandeau-nav a:hover {
+    transition-duration:0.3s;
+    border-color: #0077D5;
+    color: #0077D5;
+    background-color: rgba(180, 180, 180, 0.5);
+    transform: scale(1.2);
+}
+nav{
+    width: 75%;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+/* .t_a, .t_d, .t_f, .t_h{
+    width: 100%;
+    height: 100px;
+}
+
+.t_a img{
+    width: 200px;
+    height: 100px;
+} */
+
+.fa-arrow-up {
+    color: #0077D5;
+    position: fixed;
+    font-size: 40px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+    background-color: rgba(180, 180, 180, 0.5);
+    transition-duration: 0.4s;
+}
+.fa-arrow-up:hover {
+    transform: translate(0%, -10px);
+    color: black;
+    transition-duration: 0.4s;
+}
+footer {
+    background-color: whitesmoke;
+    border-top: 1px solid black;
+    padding-bottom:20px;
+    height: fit-content;
+    text-align: center;
+}
+
+.bottom-page{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.bottom-page div{
+    margin-top: 20px;
+}
+.bottom-page a, p{
+    text-decoration: none;
+    color: black;
+    font-family: bitter;
+    font-size: 17px;
+}
+.bottom-page a:hover {
+    text-decoration: underline;
+}
+.fa-instagram {
+    margin-right: 10px;
+    background: -webkit-linear-gradient(#FCBC63ee, #F79247, #BE317D,#8D44A2, #644C9F, #6E51B8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-external-link-alt {
+    margin-right: 10px;
+    background: -webkit-linear-gradient(rgb(18, 148, 255), #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.copyright a{
+    color: #0077D5;
+}
+
+.fa-sliders { 
+    color: #1a1a1a;
+    position: fixed;
+    font-size: 30px;
+    margin-top: 20px;
+    right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.fa-sliders:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+.fa-circle-half-stroke{
+    color: #1a1a1a;
+    position: fixed;
+    font-size: 30px;
+    margin-top: 20px;
+    right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.fa-circle-half-stroke:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+.fa-font{
+    color: #1a1a1a;
+    position: fixed;
+    font-size: 30px;
+    margin-top: 60px;
+    right: 20px;
+    border-radius: 40px 40px 40px 40px;
+    padding: 5px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.fa-font:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
+#menu { 
+    position: fixed;
+    margin-top: 40px;
+    right: 20px;
+    width: fit-content;
+    height: fit-content;
+    list-style-type:none;
+    height: fit-content;
+    display: none;
+}   
+
+/* tard */
+
+#title{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#warning{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.t_a, .t_d, .t_f, .t_h, .t_l, .t_p, .t_s, .t_t, .t_v, .t_w{
+    width: 40%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(245, 245, 245, 0.5);
+    border-radius: 15px;
+    margin-bottom: 90px;
+    padding: 20px;
+    cursor: pointer;
+    display:block;
+    border: solid 1px gray;
+    transition-duration: 0.5s;
+}
+
+.t_a::after {
+    content: "Appuyez sur la touche du logo Windows + A pour rapidement réduire toutes les applications ouvertes pour que vous accédiez à votre bureau.";
+    display: none;
+}
+
+.t_d::after {
+    content: "Appuyez sur la touche du logo Windows + D pour rapidement réduire toutes les applications ouvertes pour que vous accédiez à votre bureau. Appuyez à nouveau dessus pour tout ramener.";
+    display: none;
+}
+
+.t_f::after {
+    content: "Appuyez sur Touche de logo Windows + Flèche droite ou gauche pour ancrer parfaitement des fenêtres sur les côtés de votre écran de manière automatique, aucun redimensionnement ou positionnement manuel nécessaire.";
+    display: none;
+}
+
+.t_h::after{
+    content: "Appuyez sur Touche de logo Windows + H pour utiliser la reconnaissance vocale afin de convertir une langue parlée en texte où que vous soyez sur votre PC.";
+    display: none;
+}
+
+.t_l::after{
+    content: "Appuyez sur Touche de logo Windows + L pour verrouiller rapidement votre écran pour que d’autres utilisateurs ne puissent pas accéder à votre PC.";
+    display: none;
+}
+
+.t_p::after{
+    content: "Appuyez sur la touche de logo Windows + point (.) pour rechercher des images, symboles ou icônes pour exprimer des émotions ou communiquer de façon ludique sans aucun mot. Vous trouverez également des kamoji et des GIF ici ! (●'◡'●)";
+    display: none;
+}
+
+.t_s::after{
+    content: "Appuyez sur Touche de logo Windows + S pour obtenir des résultats personnalisés de la recherche pour des utilisateurs, e-mails et fichiers dans des sites locaux et partagés ou à partir du web.";
+    display: none;
+}
+
+.t_t::after{
+    content: "Appuyez sur Touche de logo Windows + Tabulation pour afficher et basculer entre les fenêtres, les applications ou les bureaux virtuels ouverts.";
+    display: none;
+}
+
+.t_v::after{
+    content: "Appuyez sur Touche de logo Windows + V pour enregistrer des éléments récemment copiés ou coupés dans le Presse-papiers pour que vous puissiez les coller dans d’autres applications ou les synchroniser sur des appareils.";
+    display: none;
+}
+
+.t_w::after{
+    content: "Appuyez sur la touche Windows + W ou faites glisser le bord gauche de votre écran pour accéder directement à votre panneau des widgets.";
+    display: none;
+}
+
+.t_a:hover, .t_d:hover, .t_f:hover, .t_h:hover, .t_l:hover, .t_p:hover, .t_s:hover, .t_t:hover, .t_v:hover, .t_w:hover{
+    margin-top: 10px;
+    transform: translateY(5px);
+    transition-duration: 0.5s;
+}
+
+.t_a:hover::after, .t_d:hover::after, .t_f:hover::after, .t_h:hover::after, .t_l:hover::after, .t_p:hover::after, .t_s:hover::after, .t_t:hover::after, .t_v:hover::after, .t_w:hover::after{
+    display: block;
+    transition: apparition 5s;
+    opacity: 1;
+}
+
+.t_a img, .t_d img, .t_f img, .t_h img, .t_l img, .t_p img, .t_s img, .t_t img, .t_v img, .t_w img{
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes apparition{
+    0%{
+        opacity: 0;
+        position: absolute;
+    }
+    50%{
+        opacity: 0.5;
+        position: absolute;
+        transform: translateY(5px);
+    }
+    100%{
+        opacity: 1;
+        position: absolute;
+        transform: translateY(10px);
+    }
+}
